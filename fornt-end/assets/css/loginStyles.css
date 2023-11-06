@@ -1,0 +1,146 @@
+/*
+* @Created by: Abhishek Ashinsa
+* @Date: 19/07/2022
+* @Project: E-Tech Computers
+* */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.body-style{
+    link: #fff;
+    link: #ffffff;
+    width: 50%;
+    height: 50%;
+    background-size: 100%;
+}
+
+.signup {
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.row{
+    padding-top: 40px;
+    width: 1300px;
+    height: fit-content;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layer-style{
+    flex-basis: 32%;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(0,0,0,0.8));
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-left: 25%;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.layer-style:hover{
+    box-shadow: 0 0 20px 0px rgba(7, 0, 0, 0.877);
+}
+
+h1{
+    color: #0441e0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 2%;
+    font-size: 14px;
+    border: 2px solid #999;
+    outline: none;
+}
+
+p1 {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 15%;
+}
+
+
+.btnSignUp{
+    width: 70%;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 15px;
+    border-color: #014a76;
+    background: #014a76;
+    border-width: 0px;
+    outline: none;
+    color: white;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+p2 {
+    margin-left: 10px;
+    font-weight: 600;
+    margin-top: -50px;
+}
+
+.icons{
+    top: 10%;
+    margin-left: 10px;
+}
+
+.icons ul li {
+    height: 40px;
+    width: 90px;
+    border-radius: 7px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-top: 6px;
+    margin-top: 5px;
+    color: #fff;
+    background: #000;
+}
+
+p3 {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    margin-left: 15%;
+    margin-top: -30px;
+}
+
+.hr1{
+    width: 35%;
+    margin-left: 6%;
+}
+.hr2{
+    width: 39%;
+    margin: -22px 54%;
+}
+.or {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    margin: -15px auto 10px;
+}
+.head-icon {
+    margin-left: 40%;
+    width: 80px;
+    margin-top: -50px;
+    border-width: 10px;
+    border-color: #fff;
+}

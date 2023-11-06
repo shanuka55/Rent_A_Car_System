@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Car Rental pvt. ltd.</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/mainStyles.css">
+    <link rel="stylesheet" href="assets/css/frameWork/bootstrap.min.css">
+    <meta name="keywords" content="abhishek, abhi, ashinsa, wpa, WPA">
+    <meta name="description" content="System for rent a cars">
+    <meta name="author" content="shanuka lakshan">
+    <meta name="owner" content="H.G.Shanuka Lakshan">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+            rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="bg-dark">
+
+<!--navBar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary  bg-light fixed-top shadow-lg">
+    <div class="container-fluid ">
+<!--        <h1 class="navbar-brand text-danger fw-bolder" style="font-family: 'Kalam', cursive; font-size: 25px; margin: 0; padding: 0;">Easy Car Rental</h1>-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Navbar brand -->
+            <h1 class="navbar-brand fw-bolder" style="font-family: 'Poppins', sans-serif; color: darkorange; font-size: 25px; margin: 0; padding: 0;">Easy Car Rental</h1>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link text-black"  aria-current="page" href="#"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="#"><b>Cars</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="#"><b>Contact</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black"><b>About Us</b></a>
+            </li>
+            <li class="nav-item">
+                <a href="pages/signUpPage.html" class="hero-btn"><b> Sign Up Now </b></a>
+            </li>
+            <li class="nav-item">
+                <a href="pages/loginPage.html" class="hero-btn2"><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Log In </b></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--navBar-->
+
+<div id="car">
+    <img src="assets/img/66815.jpg">
+    <div class="text-box">
+        <h1 class="topic">Rent Out Your Favourite Car From Here</h1>
+        <p><b>Welcome To Easy Car Rental Pvt. Ltd.<br> </b>All Car Brands Included and You Can Rent Out One or More of Them</p>
+    </div>
+</div><br>
+
+<section id="selection">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-mdb-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/img/cars1.jpg" class="d-block w-100" alt="Wild Landscape"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/cars2.jpg" class="d-block w-100" alt="Camera"/>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/img/cars3.jpg" class="d-block w-100" alt="Exotic Fruits"/>
+            </div>
+        </div>
+    </div>
+    <div class="selection">
+        <h1 class="topic2">Select Your Choice...!!!</h1>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="brand" class="form-label text-light fw-bold">Select a Brand : </label>
+                <select class="form-select" aria-label="Default select example" id="brand">
+                    <option selected>Select a brand</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="passengers" class="form-label text-light fw-bold">Number of Passengers : </label>
+                <input class="form-control" id="passengers" type="number">
+            </div>
+            <div class="col-md-6">
+                <label for="color" class="form-label text-light fw-bold">Select Color : </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="color">
+                    <option selected>Select</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="price" class="form-label text-light fw-bold">Select Price Range : </label>
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="price">
+                    <option selected>Select</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div id="pics">
+        <div>
+            <img src="assets/img/subcar1.jpg">
+        </div>
+        <div>
+            <img src="assets/img/subcar2.jpg">
+        </div>
+        <div>
+            <img src="assets/img/subcar3.jpg">
+        </div>
+    </div>
+</section>
+
+<section id="footer" class="bg-black">
+    <!-- Footer -->
+    <footer class="bg-light text-center text-black" >
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4" style="margin-top: 50px;">
+                <!-- Facebook -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-check-dark mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Email address</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-dark mb-4" style="color: darkorange;">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-black" href="https://mdbootstrap.com/">sahnukalakshan.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</section>
+
+<!-- MDB -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+<script type="text/javascript" src="assets/css/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/css/js/"></script>
+</body>
+</html>

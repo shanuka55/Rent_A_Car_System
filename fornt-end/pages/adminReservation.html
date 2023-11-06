@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Easy Car Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../assets/css/adminStyles/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../assets/css/adminStyles/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../assets/css/adminStyles/select2.min.css">
+    <link rel="stylesheet" href="../assets/css/adminStyles/select2-bootstrap.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../assets/img/favicon.png" />
+
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+            rel="stylesheet"
+    />
+
+    <link href="../assets/css/frameWork/bootstrap.min.css">
+</head>
+<body>
+<div class="container-scroller">
+    <!-- partial:../../partials/_sidebar.html -->
+    <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+            <a class="sidebar-brand brand-logo" href="#" style="text-decoration: none; color: white;">A &nbsp; D &nbsp; M &nbsp; I &nbsp; N</a>
+            <a class="sidebar-brand brand-logo-mini" href="#"><img src="../assets/img/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <ul class="nav">
+            <li class="nav-item profile">
+                <div class="profile-desc">
+                    <div class="profile-pic">
+                        <div class="count-indicator">
+                            <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg" alt="">
+                            <span class="count bg-success"></span>
+                        </div>
+                        <div class="profile-name">
+                            <h5 class="mb-0 font-weight-normal">Abhishek Ashinsa</h5>
+                            <span>Admin</span>
+                        </div>
+                    </div>
+                    <a href="#" id="profile-dropdown" data-toggle="dropdown"><img src="../assets/img/icons8-double-down-26.png" style="right: 50px; margin-bottom: 15px; max-width: 15px; max-height: 15px;"></a>
+                    <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                        <a href="#" class="dropdown-item preview-item">
+                            <div class="preview-thumbnail">
+                                <div class="preview-icon bg-dark rounded-circle">
+                                    <i class="mdi mdi-settings text-primary"></i>
+                                </div>
+                            </div>
+                            <div class="preview-item-content">
+                                <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item preview-item">
+                            <div class="preview-thumbnail">
+                                <div class="preview-icon bg-dark rounded-circle">
+                                    <i class="mdi mdi-onepassword  text-info"></i>
+                                </div>
+                            </div>
+                            <div class="preview-item-content">
+                                <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                            </div>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item preview-item">
+                            <div class="preview-thumbnail">
+                                <div class="preview-icon bg-dark rounded-circle">
+                                    <i class="mdi mdi-calendar-today text-success"></i>
+                                </div>
+                            </div>
+                            <div class="preview-item-content">
+                                <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item nav-category">
+                <span class="nav-link">Navigation</span>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="adminDashBoard.html">
+              <span class="menu-icon">
+                    <img src="../assets/img/icons8-speed-64%20(1).png" style="color: white; margin-right: 15px; margin-left: 15px; max-height: 25px; max-width: 25px;">
+              </span>
+                    <span class="menu-title" style="font-family: 'Noto Sans', sans-serif;">DASHBOARD</span>
+                </a>
+            </li>
+
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="addNewCustomer.html">
+              <span class="menu-icon">
+                    <img src="../assets/img/icons8-customer-32.png" style="color: white; margin-right: 15px; margin-left: 15px; max-height: 25px; max-width: 25px;">
+              </span>
+                    <span class="menu-title" style="font-family: 'Noto Sans', sans-serif;">CUSTOMER</span>
+                </a>
+            </li>
+            <!--          <li class="nav-item menu-items">-->
+            <!--            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">-->
+            <!--              <span class="menu-icon">-->
+            <!--                    <img src="../assets/img/icons8-customer-32.png" style="color: white; margin-right: 15px; margin-left: 15px; max-height: 25px; max-width: 25px;">-->
+            <!--              </span>-->
+            <!--              <span class="menu-title" style="font-family: 'Noto Sans', sans-serif;">CUSTOMER</span>-->
+            <!--            </a>-->
+            <!--            <div class="collapse" id="ui-basic">-->
+            <!--              <ul class="nav flex-column sub-menu">-->
+            <!--                <li class="nav-item" style="font-family: 'Noto Sans', sans-serif;"><a class="nav-link" href="addNewCustomer.html">Add Customer</a></li>-->
+            <!--                <li class="nav-item" style="font-family: 'Noto Sans', sans-serif;"> <a class="nav-link" href="#">Update Customer Details</a></li>-->
+            <!--                <li class="nav-item" style="font-family: 'Noto Sans', sans-serif;"> <a class="nav-link" href="#">Delete Customer</a></li>-->
+            <!--              </ul>-->
+            <!--            </div>-->
+            <!--          </li>-->
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="adminVehicle.html">
+              <span class="menu-icon">
+                    <img src="../assets/img/icons8-car-24.png" style="color: white; margin-right: 15px; margin-left: 15px; max-height: 25px; max-width: 25px;">
+              </span>
+                    <span class="menu-title" style="font-family: 'Noto Sans', sans-serif;">VEHICLE</span>
+                </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="adminReservation.html">
+              <span class="menu-icon">
+                    <img src="../assets/img/icons8-staff-24.png" style="color: white; margin-right: 15px; margin-left: 15px; max-height: 25px; max-width: 25px;">
+              </span>
+                    <span class="menu-title" style="font-family: 'Noto Sans', sans-serif;">STAFF</span>
+                </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="adminReservation.html">
+              <span class="menu-icon">
+                    <img src="../assets/img/icons8-get-revenue-24.png" style="color: white; margin-right: 15px; margin-left: 15px; max-height: 25px; max-width: 25px;">
+              </span>
+                    <span class="menu-title" style="font-family: 'Noto Sans', sans-serif;">RESERVATION</span>
+                </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="adminPayments.html">
+              <span class="menu-icon">
+                    <img src="../assets/img/icons8-transaction-24.png" style="color: white; margin-right: 15px; margin-left: 15px; max-height: 25px; max-width: 25px;">
+              </span>
+                    <span class="menu-title" style="font-family: 'Noto Sans', sans-serif;">PAYMENTS</span>
+                </a>
+            </li>
+            <li class="nav-item menu-items">
+                <a class="nav-link" href="adminIncome.html">
+              <span class="menu-icon">
+                    <img src="../assets/img/icons8-combo-chart-30.png" style="color: white; margin-right: 15px; margin-left: 15px; max-height: 25px; max-width: 25px;">
+              </span>
+                    <span class="menu-title">INCOME</span>
+                </a>
+            </li><br>
+
+            <a href="../index.html" type="button" class="btn btn-outline-danger">
+                <img src="../assets/img/icons8-exit-67.png" style="max-height: 20px; max-width: 20px;">
+                EXIT
+            </a>
+        </ul>
+    </nav>
+
+    <div>
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo-mini" href="#"><img src="../assets/img/logo-mini.svg" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <img src="../assets/img/icons8-search-client-48.png" alt="" style="max-width: 25px; max-height: 25px;">
+                </button>
+                <ul class="navbar-nav w-100">
+                    <li class="nav-item w-100">
+                        <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item dropdown border-left">
+                        <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                            <img src="../assets/img/icons8-mail-24.png">
+                            <span class="count bg-success"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown border-left">
+                        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                            <img src="../assets/img/icons8-bell-24.png">
+                            <span class="count bg-danger"></span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                    <span class="mdi mdi-format-line-spacing"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper bg-black" style="margin: 0; padding: 0;">
+        <!-- partial:../../partials/_navbar.html -->
+        <!-- partial -->
+        <div class="main-panel bg-dark">
+            <div class="content-wrapper">
+                <div class="page-header">
+                    <h3 class="page-title"> Reservation Details </h3><br>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item active" aria-current="page">Easy Car Rental</li>
+                        </ol>
+                        <h3 class="page-title text-danger"> $$$$$$$$$ </h3>
+                    </nav>
+                </div>
+
+
+                <div class="row my-5" >
+                    <div class="col-12 grid-margin">
+                        <div class="card" style="border: 1px solid #a11e1e;">
+                            <div class="card-body bg-dark">
+                                <h4 class="card-title">Rental Status</h4>
+                                <div class="table-responsive" style="max-height: 500px;">
+                                    <table class="table">
+                                        <thead>
+                                        <tr>
+                                            <th> R-ID </th>
+                                            <th> Customer Name </th>
+                                            <th> Driver Name </th>
+                                            <th> Vehicle Number </th>
+                                            <th> Pickup Date </th>
+                                            <th> Reserving Date </th>
+                                            <th> Description </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody class="text-white">
+                                        <tr>
+                                            <td>001</td>
+                                            <td>Saman</td>
+                                            <td> R001 </td>
+                                            <td> Prius </td>
+                                            <td> 23/01/2023 </td>
+                                            <td> 26/01/2023 </td>
+                                            <td> ----- </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>002</td>
+                                            <td>Amal</td>
+                                            <td> R002 </td>
+                                            <td> Defender </td>
+                                            <td> 23/01/2023 </td>
+                                            <td> 24/01/2023 </td>
+                                            <td> ----- </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>003</td>
+                                            <td>Nimal</td>
+                                            <td> R003 </td>
+                                            <td> Aqua </td>
+                                            <td> 23/01/2023 </td>
+                                            <td> 25/01/2023 </td>
+                                            <td> ----- </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>004</td>
+                                            <td>Kamal</td>
+                                            <td> R004 </td>
+                                            <td> Fit </td>
+                                            <td> 24/01/2023 </td>
+                                            <td> 26/01/2023 </td>
+                                            <td> ----- </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>005</td>
+                                            <td>Vimal</td>
+                                            <td> R005 </td>
+                                            <td> Premio </td>
+                                            <td> 24/01/2023 </td>
+                                            <td> 26/01/2023 </td>
+                                            <td> ----- </td>
+
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- content-wrapper ends -->
+
+
+
+            <!-- Modal -->
+            <div aria-hidden="true" aria-labelledby="saveCustomerLabel" class="modal fade" id="editVehicleDetails" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header bg-dark">
+                            <h5 class="modal-title text-danger">Edit Vehicle Details</h5>
+                            <button aria-label="Close" class="btn-close bg-danger" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body bg-dark">
+                            <section class="text-white">
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtVehicleID">Vehicle ID</label>
+                                    <input class="form-control" id="txtVehicleID" type="text">
+                                </div>
+                                <div class="mb-3 shadow-none">
+                                    <label class="form-label text-white" for="txtVehicleNumber">Brand</label>
+                                    <input class="form-control" id="txtVehicleNumber" multiple type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtVehicleModel">Model</label>
+                                    <input class="form-control" id="txtVehicleModel" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="cmbFuelType">Fuel type</label>
+                                    <select id="cmbFuelType" name="id" class="form-select">
+                                        <option value="1" selected>Desel</option>
+                                        <option value="1" selected>Petrol</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtMileage">Mileage</label>
+                                    <input class="form-control" id="txtMileage" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtPrice">Nmber Of Passengers</label>
+                                    <input class="form-control" id="txtPrice" type="text">
+                                    <!--                                    <p>250km for 24 hours...!</p>-->
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtPrice">Monthly Rate</label>
+                                    <input class="form-control" id="txtMonthlyRate" type="text">
+                                    <!--                                    <p>250km for 24 hours...!</p>-->
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtPrice">Daily Rate</label>
+                                    <input class="form-control" id="txtDailyRate" type="text">
+                                    <!--                                    <p>250km for 24 hours...!</p>-->
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtPrice">Free Milage</label>
+                                    <input class="form-control" id="txtFreeMilage" type="text">
+                                    <!--                                    <p>250km for 24 hours...!</p>-->
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtPrice">Price Of Extra KM</label>
+                                    <input class="form-control" id="txtExtraPrice" type="text">
+                                    <!--                                    <p>250km for 24 hours...!</p>-->
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtPrice">Registration NUmber</label>
+                                    <input class="form-control" id="txtRegistrationNumber" type="text">
+                                    <!--                                    <p>250km for 24 hours...!</p>-->
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtPrice">Last Service Milage</label>
+                                    <input class="form-control" id="txtServiceMilage" type="text">
+                                    <!--                                    <p>250km for 24 hours...!</p>-->
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtPrice">Color</label>
+                                    <input class="form-control" id="txtColor" type="color">
+                                    <!--                                    <p>250km for 24 hours...!</p>-->
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label text-white" for="txtPrice">Upload Car Picture</label>
+                                    <input class="form-control" id="carPicture" type="file">
+                                    <!--                                    <p>250km for 24 hours...!</p>-->
+                                </div>
+
+                            </section>
+
+
+
+                        </div>
+                        <div class="modal-footer bg-dark">
+                            <button class="btn btn-outline-success" data-bs-dismiss="modal" type="button">Save Vehicle</button>
+                            <button class="btn btn-outline-warning" data-bs-dismiss="modal" type="button">Update Details</button>
+                            <button class="btn btn-outline-danger" data-bs-dismiss="modal" type="button">Delete Vehicle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- partial:../../partials/_footer.html -->
+            <footer class="footer">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates</a> from Bootstrapdash.com</span>
+                </div>
+            </footer>
+            <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+</div>
+<!-- container-scroller -->
+<!-- plugins:js -->
+<script src="../assets/css/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="../assets/css/js/adminJS/select2.min.js"></script>
+<script src="../assets/css/js/adminJS/typeahead.bundle.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="../assets/css/js/off-canvas.js"></script>
+<script src="../assets/css/js/hoverable-collapse.js"></script>
+<script src="../assets/css/js/misc.js"></script>
+<script src="../assets/css/js/settings.js"></script>
+<script src="../assets/css/js/todolist.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="../assets/css/js/adminJS/file-upload.js"></script>
+<script src="../assets/css/js/adminJS/typeahead.js"></script>
+<script src="../assets/css/js/adminJS/select2.js"></script>
+<!-- End custom js for this page -->
+<script src="../assets/css/js/bootstrap.min.js"></script>
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"
+></script>
+</body>
+</html>

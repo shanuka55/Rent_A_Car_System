@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Car Rental pvt. ltd.</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/frameWork/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/userSignUp.css">
+    <meta name="keywords" content="shanuka Lakshan">
+    <meta name="description" content="System for rent a cars">
+    <meta name="author" content="shanuka lakshan">
+    <meta name="owner" content="H.G.Shanuka lakshan">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css"
+            rel="stylesheet"
+    />
+</head>
+<body>
+
+
+<section class="h-100" style="background-color: white;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center ">
+            <div class="col ">
+                <div class="card card-registration " >
+                    <div class="row g-0 ">
+                        <div class="col-xl-6 d-none d-xl-block">
+                            <img src="../assets/img/login.webp" id="sImg"/>
+                        </div>
+                        <div class="col-xl-6" id="signUp">
+                            <div class="card-body p-md-5 text-black">
+                                <h3 class="mb-3 text-uppercase text-center" style="color: darkorange">User Registration Form</h3>
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="txtCustomerName" class="form-control form-control-lg text-light"/>
+                                            <label class="form-label text-light" for="txtCustomerName">User Name</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-4">
+                                        <div class="form-outline">
+                                            <input type="password" id="txtCustomerPassword" class="form-control text-light form-control-lg" />
+                                            <label class="form-label text-light" for="txtCustomerPassword">Password</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 mb-4">
+                                        <div class="form-outline">
+                                            <input type="text" id="txtCustomerMail" class="form-control form-control-lg text-light" />
+                                            <label class="form-label text-light" for="txtCustomerMail">Email</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="text" id="txtCustomerAddress" class="form-control form-control-lg text-light" />
+                                    <label class="form-label text-light" for="txtCustomerAddress">Address</label>
+                                </div>
+
+                                <div class="form-outline mb-4">
+                                    <input type="tel" id="txtCustomerContact" class="form-control form-control-lg text-light" />
+                                    <label class="form-label text-light" for="txtCustomerContact">Contact Number</label>
+                                </div>
+
+                                <div class="col-md-12 pe-5 mb-4">
+
+                                    <input class="form-control form-control-lg text-light" id="NIC" type="file" />
+                                    <div class="small text-muted mt-2 text-light">Upload your NIC or any other relevant file. Max file
+                                        size 50 MB</div>
+
+                                </div>
+
+                                <div class="col-md-12 pe-5 mb-4">
+
+                                    <input class="form-control form-control-lg text-light" id="licence" type="file" />
+                                    <div class="small text-muted mt-2 text-light">Upload your Driving Licence or any other relevant file. Max file
+                                        size 50 MB</div>
+
+                                </div>
+
+<!--                                <div class="form-check d-flex justify-content-start mb-2 pb-3">-->
+<!--                                    <input class="form-check-input me-3" type="checkbox" value="" id="form2Example3c" />-->
+<!--                                    <label class="form-check-label text-black" for="form2Example3c">-->
+<!--                                        I do accept the <a href="#!" class="text-black"><u>Terms and Conditions</u></a> of your-->
+<!--                                        site.-->
+<!--                                    </label>-->
+<!--                                </div>-->
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <button type="button" id="btnClearAll" class="btn btn-danger col-12">Clear</button>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <button type="button" id="btnSignIn" class="btn btn-primary col-12">Sign in</button>
+                                    </div>
+                                </div>
+
+                                <p class="text-center mb-4 text-light">Have already an account? <a href="loginPage.html" class="fw-bold text-light"><u>Login here</u></a></p>
+
+                                <div class="row">
+                                    <div class="col-md-12 mb-4 ms-auto">
+                                        <p class="text-center mb-0 text-light">I am a Driver....! <a href="driverSignUp.html" class="fw-bold text-light"><u>Sign Up Here</u></a></p>
+                                    </div>
+                                </div>
+
+                                <p class="text-center mb-5 fw-bolder text-light" style="font-size: 20px;">or Sign Up with : </p>
+
+                                <div class="text-center mb-4">
+                                    <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                        <i class="fab fa-google"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </button>
+
+                                    <button type="button" class="btn btn-secondary btn-floating mx-1">
+                                        <i class="fab fa-github"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="ms-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+<script type="text/javascript" src="../assets/css/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../assets/css/js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript" src="../assets/js/signUp.js"></script>
+</body>
+</html>

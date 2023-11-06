@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Car Rental</title>
+
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="../assets/css/customerStyles/customerDashboardStyle.css">
+    <link rel="stylesheet" href="../assets/css/adminStyles/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../assets/css/adminStyles/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../assets/css/adminStyles/select2.min.css">
+    <link rel="stylesheet" href="../assets/css/adminStyles/select2-bootstrap.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+          rel="stylesheet">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="../assets/css/customerStyles/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/css/customerStyles/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../assets/css/frameWork/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../assets/css/customerStyles/style.css" rel="stylesheet">
+</head>
+
+<body style="background-color: black">
+
+<!--
+  - #HEADER
+-->
+
+<header class="header" data-header style="background-color: black; color: white; margin-bottom: 100px;">
+    <div class="container" style="">
+
+        <div class="overlay" data-overlay></div>
+
+        <a href="#" class="logo">
+            <!--            <img src="" alt="Ridex logo">-->
+        </a>
+
+        <nav class="navbar" data-navbar  style="background-color: black">
+            <ul class="navbar-list">
+
+                <li>
+                    <a href="../index.html" class="navbar-link" data-nav-link style="color: white;">Home</a>
+                </li>
+
+                <li>
+                    <a href="#featured-car" class="navbar-link" data-nav-link style="color: white;">Explore cars</a>
+                </li>
+
+                <li>
+                    <a href="#blog" class="navbar-link" data-nav-link style="color: white;">Contact Us</a>
+                </li>
+
+                <!--                <li>-->
+                <!--                    <a href="#" class="navbar-link" data-nav-link>About us</a>-->
+                <!--                </li>-->
+
+                <!--                <li>-->
+                <!--                    <a href="#blog" class="navbar-link" data-nav-link>Blog</a>-->
+                <!--                </li>-->
+
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+
+            <div class="header-contact">
+                <a href="tel:0771469122" class="contact-link" style="color: white;">0764988360</a>
+
+                <span class="contact-time" style="color: white;">Mon - Sat: 9:00 am - 6:00 pm</span>
+            </div>
+
+            <img src="../assets/img/icons8-name-50.png">
+
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                <h6 class="p-3 mb-0">Profile</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                            <img src="../assets/img/icons8-services-26.png" alt="" style="max-height: 25px; max-width: 25px;">
+                        </div>
+                    </div>
+                    <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                        <div class="preview-icon bg-dark rounded-circle">
+                            <img src="../assets/img/icons8-power-off-button-64.png" alt="" style="max-height: 25px; max-width: 25px;">
+                        </div>
+                    </div>
+                    <div class="preview-item-content">
+                        <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <p class="p-3 mb-0 text-center">Advanced settings</p>
+            </div>
+            <a href="#" id="profile-dropdown" data-toggle="dropdown"><img src="../assets/img/icons8-double-down-26.png" style="right: 50px; margin-bottom: 15px; max-width: 15px; max-height: 15px;"></a>
+
+            <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+                <span class="one"></span>
+                <span class="two"></span>
+                <span class="three"></span>
+            </button>
+
+        </div>
+
+    </div>
+</header>
+
+
+
+
+
+<main style="background-color: black; margin-top: 100px;">
+    <article  >
+
+        <div class="row">
+            <div class="col-9 grid-margin" style="margin-left: 10%;">
+                <div class="card" style="background-color: #1c1c1f;">
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <div class="table-responsive" style="max-height: 500px;">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th style="color: #b60000;"> No </th>
+                                    <th style="color: #b60000;"> Start Time </th>
+                                    <th style="color: #b60000;"> Date </th>
+                                    <th style="color: #b60000;"> Duration </th>
+                                    <th style="color: #b60000;"> Vehicle Details </th>
+                                </tr>
+                                </thead>
+                                <tbody class="text-white">
+                                <tr>
+                                    <td>001</td>
+                                    <td>Saman</td>
+                                    <td> R001 </td>
+                                    <td> Prius </td>
+                                    <td> 23/01/2023 </td>
+                                </tr>
+                                <tr>
+                                    <td>002</td>
+                                    <td>Amal</td>
+                                    <td> R002 </td>
+                                    <td> Defender </td>
+                                    <td> 23/01/2023 </td>
+                                </tr>
+                                <tr>
+                                    <td>003</td>
+                                    <td>Nimal</td>
+                                    <td> R003 </td>
+                                    <td> Aqua </td>
+                                    <td> 23/01/2023 </td>
+                                </tr>
+                                <tr>
+                                    <td>004</td>
+                                    <td>Kamal</td>
+                                    <td> R004 </td>
+                                    <td> Fit </td>
+                                    <td> 24/01/2023 </td>
+                                </tr>
+                                <tr>
+                                    <td>005</td>
+                                    <td>Vimal</td>
+                                    <td> R005 </td>
+                                    <td> Premio </td>
+                                    <td> 24/01/2023 </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row"  style="margin-left: 10%;">
+            <div class="col-sm-11 col-md-5 col-xl-3 mx-lg-5 ms-lg-5 text-white" style="margin-left: 25%;">
+                <div class="h-100 bg-black rounded p-4" style="box-shadow: 0px -1px 10px 8px rgb(255, 255, 255, 0.89);">
+                    <div class="d-flex align-items-center justify-content-between mb-4">
+                        <h6 class="mb-0">Calender</h6>
+                        <a href="" style="color: #9c0303; text-decoration: none; font-weight: 600;">Show All</a>
+                    </div>
+                    <div id="calender"></div>
+                </div>
+            </div>
+
+
+            <div class="col-sm-12 col-md-8 col-xl-5">
+                <div class="h-100 bg-dark rounded p-4" style="box-shadow: 0px -1px 10px 8px rgb(255, 255, 255, 0.89);">
+                    <div class="d-flex align-items-center justify-content-between mb-4" style="color: #9c0303; text-decoration: none; font-weight: 600;">
+                        <h6 class="mb-0">To Do List</h6>
+                        <a href="">Show All</a>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <input class="form-control bg-transparent" type="text" placeholder="Enter task">
+                        <button type="button" class="btn btn-primary ms-2">Add</button>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-2 text-white">
+                        <input class="form-check-input m-0" type="checkbox">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Short task goes here...</span>
+                                <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-2 text-white">
+                        <input class="form-check-input m-0" type="checkbox">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Short task goes here...</span>
+                                <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-2 text-white">
+                        <input class="form-check-input m-0" type="checkbox" checked>
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span><del>Short task goes here...</del></span>
+                                <button class="btn btn-sm text-primary"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center border-bottom py-2 text-white">
+                        <input class="form-check-input m-0" type="checkbox">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Short task goes here...</span>
+                                <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center pt-2 text-white">
+                        <input class="form-check-input m-0" type="checkbox">
+                        <div class="w-100 ms-3">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Short task goes here...</span>
+                                <button class="btn btn-sm"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </article>
+</main>
+
+<!--
+  - #FOOTER
+-->
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <!--                    <img src="./assets/images/logo.svg" alt="Ridex logo">-->
+                </a>
+
+                <p class="footer-text">
+                    Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
+                    consumers an
+                    attractive and fun selection.
+                </p>
+            </div>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Company</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">About us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Pricing plans</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Our blog</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Contacts</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Support</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Help center</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Ask a question</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Privacy policy</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Terms & conditions</a>
+                </li>
+
+            </ul>
+
+            <ul class="footer-list">
+
+                <li>
+                    <p class="footer-list-title">Neighborhoods in New York</p>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Manhattan</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Central New York City</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Upper East Side</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Queens</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Theater District</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Midtown</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">SoHo</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Chelsea</a>
+                </li>
+
+            </ul>
+            <div class="footer-bottom bg-black" style="background-color: #000000!important; width: 100%;">
+
+                <ul class="social-list">
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="logo-skype"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <p class="copyright">
+                    &copy; 2023 <a href="#">Abhishek Ashinsa</a>. All Rights Reserved
+                </p>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</footer>
+
+
+
+
+
+<!--
+  - custom js link
+-->
+<script src="../assets/css/js/script.js"></script>
+<script src="../assets/css/js/vendor.bundle.base.js"></script>
+<!-- endinject -->
+<!-- Plugin js for this page -->
+<script src="../assets/css/js/adminJS/select2.min.js"></script>
+<script src="../assets/css/js/adminJS/typeahead.bundle.min.js"></script>
+<!-- End plugin js for this page -->
+<!-- inject:js -->
+<script src="../assets/css/js/off-canvas.js"></script>
+<script src="../assets/css/js/hoverable-collapse.js"></script>
+<script src="../assets/css/js/misc.js"></script>
+<script src="../assets/css/js/settings.js"></script>
+<script src="../assets/css/js/todolist.js"></script>
+<!-- endinject -->
+<!-- Custom js for this page -->
+<script src="../assets/css/js/adminJS/file-upload.js"></script>
+<script src="../assets/css/js/adminJS/typeahead.js"></script>
+<script src="../assets/css/js/adminJS/select2.js"></script>
+<!-- End custom js for this page -->
+<!--
+  - ionicon link
+-->
+
+<script src="../assets/css/customerStyles/js/chart.min.js"></script>
+<script src="../assets/css/customerStyles/js/easing.min.js"></script>
+<script src="../assets/css/customerStyles/js/waypoints.min.js"></script>
+<script src="../assets/css/customerStyles/js/owl.carousel.min.js"></script>
+<script src="../assets/css/customerStyles/js/moment.min.js"></script>
+<script src="../assets/css/customerStyles/js/moment-timezone.min.js"></script>
+<script src="../assets/css/customerStyles/js/tempusdominus-bootstrap-4.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="../assets/css/customerStyles/js/main.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

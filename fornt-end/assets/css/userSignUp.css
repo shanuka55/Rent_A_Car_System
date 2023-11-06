@@ -1,0 +1,13 @@
+#signUp {
+    color: cornsilk;
+    background: rgba(62, 62, 62, 0.91);
+}
+
+#sImg {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /*background-image: url(../img/signUpBack1.webp);*/
+}
